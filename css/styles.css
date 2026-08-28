@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+
+    background-color: #f0eaea;
+      font-family: "Montserrat", sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding-top: 1rem;
+
+  
+
+    img {
+        width: 80px;
+        height: 80px;
+        transition: transform 0.3s ease;
+    
+     &:hover {
+         transform: scale(1.1) rotate(10deg);
+     }
+ 
+}
+}
+.lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    li{
+        list-style: none;       
+        text-align: center;
+        padding: 0.7rem;
+         
+       
+        a {
+          
+            color: #414040;
+             text-decoration: none;
+             font-size: 0.5rem;
+              transition: transform 1s ease;        
+        }
+           &:hover {
+          transform: scale(1.1) translateY(-10px);
+    }
+}
+}
+
+.hero {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../assets/images/fondohero.jpg);
+    background-position: center;
+    background-size: cover;
+      background-repeat: no-repeat; 
+    background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+   }
+
+.contenedorhero {
+    width: 80%;
+     
+   
+     h1 {
+        color: #ffffff;
+        font-family: "Special Elite", system-ui;
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+     h2 {
+        font-weight: 500;
+        text-wrap: pretty;
+        font-size: 0.8rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        line-height: 1.3rem;
+        color: #ffffff;
+     }
+
+     a {
+        display: inline;
+        background-color: #fcee28;
+        border-radius: 1.5rem;
+        text-decoration: none;
+        padding: 0.5rem;
+        color: #000000;
+           font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        
+
+     }
+    }
+/* }
+h2, p {
+    color: #808692;
+    font-family: sans-serif;
+}
+
+form {
+    color: #808692;
+}
+
+
+
+ div input {
+    background-color: blue;
+    color: #ffffff;
+    font-size:small;
+    height: 30px 30px;
+    border-radius: 10px;
+    border-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-width: 0.5px;
+ }
+
+ form label {
+    color: #ffffff;
+    padding: 30px 30px 0px 5px;
+    }
