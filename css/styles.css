@@ -6,7 +6,7 @@
 }
 body {
 
-    background-color: #f0eaea;
+    background-color: #F5F2F0;
       font-family: "Montserrat", sans-serif;
 }
 
@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     padding-top: 1rem;
 
          @media (min-width:600px) {
@@ -26,6 +26,7 @@ body {
      }
 
     img {
+        border-radius: 50px;
         width: 80px;
         height: 80px;
         transition: transform 0.3s ease;
@@ -131,17 +132,16 @@ flex-direction: row;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 1rem;
+    /* padding: 0.3rem; */
 
 
     h2 {
-        font-size: 0.8rem;
-        padding: 0.8rem;
-    }
+        font-size: 0.6rem;
+        }
 
     p {
         font-size: 0.4rem;
-        padding-bottom: 0.5rem;
+        padding: 0.5rem;
     }
 
     a {
@@ -184,8 +184,12 @@ flex-direction: row;
     border-radius: 1rem;
     margin: 1rem;
 
+    a {
+        text-align: center;
+    }
+
     img {
-       width: 95%;
+          width: 95%;
        height: auto;
        border-radius: 1rem;
        transition: transform 0.5s ease;
@@ -193,5 +197,75 @@ flex-direction: row;
        &:hover {
          transform: rotate(6deg) scale(1.1); 
        }
+    }
+}
+/* seccion contacto en index */
+.contacto-index {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/telefonos.jpg);
+    background-position: center;
+    background-size: cover;
+     height: 40vh;
+  
+}
+.texto-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    
+
+    h2 {
+         font-family: "Special Elite", system-ui;
+         font-size: 1rem;
+         padding-top: 2rem;
+    }
+
+    p {
+          font-size: 0.5rem;
+          text-align: center;
+             padding: 0.5rem 1.5rem 1.5rem;
+    }
+
+        a {
+        display: inline-block;
+        background-color: #fcee28;
+        border-radius: 0.8rem;
+        text-decoration: none;
+        padding: 0.3rem;
+        color: #000000;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        width: 30%;
+      text-align: center;
+       font-size: 0.5rem;
+    }
+}
+
+.minicards {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem;
+    gap: 2rem;
+}
+
+.minicard-uno, .minicard-dos, .minicard-tres {
+    padding: 1rem;
+    background-color: #C4BFBB;
+    width: 30%;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 0.3rem;
+box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+    img {
+        max-width: 30px;
+        min-width: 20%;
+        padding-bottom: 0.3rem;
+    }
+
+    p {
+        min-width: 20%;
+        color: #171717;
     }
 }
