@@ -34,12 +34,12 @@ body {
     &:hover {
       transform: scale(1.1) rotate(10deg);
     }
-    }
-        @media (min-width: 600px){
-       img {
-     margin: 1rem;
   }
-}
+  @media (min-width: 600px) {
+    img {
+      margin: 1rem;
+    }
+  }
 }
 .lista {
   display: flex;
@@ -65,12 +65,11 @@ body {
     @media (min-width: 600px) {
       padding-right: 1.5rem;
 
-    a { 
-       font-size: 0.7rem;
+      a {
+        font-size: 0.7rem;
+      }
     }
-    
   }
-}
 }
 .hero {
   width: 100%;
@@ -123,10 +122,9 @@ body {
     /* width: 150px; */
   }
 
-        @media (min-width: 600px) {
-
-    h1 { 
-       font-size: 1.9rem;
+  @media (min-width: 600px) {
+    h1 {
+      font-size: 1.9rem;
     }
 
     h2 {
@@ -136,11 +134,14 @@ body {
       margin: 0 auto;
       margin-bottom: 1rem;
     }
-    
+  
+    a {
+       font-size: 1rem;
+        padding: 0.6rem;
+    }
+  }
   }
 
- 
-}
 
 /* sección desarrollos index.html */
 
@@ -159,13 +160,13 @@ body {
   text-align: center;
 
   h2 {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 
   p {
-    font-size: 0.5rem;
+    font-size: 0.4rem;
     padding: 0.6rem;
-    line-height: 0.6rem;
+    line-height: 0.5rem;
     text-wrap: pretty;
   }
 
@@ -194,6 +195,24 @@ body {
     a {
       font-size: 0.7rem;
       width: 20%;
+    }
+  }
+
+  @media (min-width: 600px) {
+    h2 {
+      font-size: 1.5rem;
+      padding: 1rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+      line-height: 0.9rem;
+      text-wrap: pretty;
+      padding: 0rem 3rem 1.6rem 3rem;
+    }
+    a {
+      font-size: 0.8rem;
+      width: 18%;
     }
   }
 }
@@ -255,15 +274,15 @@ body {
   h2 {
     font-family: "Special Elite", system-ui;
     font-size: 1rem;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
   }
 
   p {
     font-size: 0.5rem;
     text-align: center;
-    padding: 0.5rem 1.5rem;
+    padding: 1.5rem;
     line-height: 0.6rem;
-       text-wrap: pretty;
+    text-wrap: pretty;
   }
 
   a {
@@ -284,20 +303,23 @@ body {
     p {
       font-size: 0.5rem;
     }
+  }
+  @media (min-width: 600px) {
+    h2 {
+      font-size: 1.4rem;
+    }
+    p {
+      max-width: 600px;
+      font-size: 0.8rem;
+      line-height: 0.9rem;
+    }
 
-     @media (min-width: 600px) {
-      p {
-        max-width: 600px;
-        font-size: 0.6rem;
-        line-height: 0.8rem;
-     }
-
-     a {
-      margin-top: 0.5rem;
-     }
-     
-      }
-
+    a {
+      font-size: 0.7rem;
+      padding: 0.4rem;
+      width: 130px;
+      font-weight: 800;
+    }
   }
 }
 
@@ -332,17 +354,20 @@ body {
     margin: 0 auto;
     color: #171717;
     text-wrap: pretty;
-     line-height: 0.4rem;
+    line-height: 0.4rem;
   }
 
-   @media (min-width: 600px){
-
+  @media (min-width: 600px) {
     p {
       padding: 0.8rem;
       font-size: 0.6rem;
       line-height: 0.7rem;
-   }
-}
+    }
+
+    img {
+      padding-top: 1rem;
+    }
+  }
 }
 
 .footer {
@@ -363,9 +388,10 @@ body {
       font-size: 0.5rem;
     }
 
-     @media (min-width: 600px) {
+    @media (min-width: 600px) {
       p {
         font-size: 0.7rem;
-     }  
+      }
     }
-  }}
+  }
+}
