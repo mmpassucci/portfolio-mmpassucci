@@ -402,23 +402,30 @@ body {
   display: flex;
   flex-direction: row;
   color: #494949;
-  text-align: center;
   margin-bottom: 1rem;
+  align-items: center;
 
-  img {
-    width: 50%;
-    height: auto;
-    border-radius: 1rem;
-    margin: 0.7rem;
-     box-shadow:
+
+  .contenedor-img {
+       width: 50%;
+       min-width: 40%;
+    margin: 0.4rem;
+   
+
+    img {
+      width: 100%;
+      height: auto;
+        box-shadow:
     0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
+     border-radius: 0.6rem;
+    }
   }
 
   .texto-uno {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
   text-align: left;
    gap: 0.2rem;
    padding: 0 0.5rem 0 0.3rem;
@@ -426,15 +433,85 @@ body {
   }
   h2 {
     font-family: "Special Elite", system-ui;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
 
   h3 {
     font-size: 0.5rem;
   }
   p {
-    font-size: 0.3rem;
-    text-wrap: pretty;
-  
+    font-size: 0.4rem;
+    text-wrap: pretty;  
   }
 }
+
+/* seccion desarrollo-bio */
+.contenedor-dos {
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-rows: repeat(4, auto);
+ /* height: auto; */
+  grid-gap: 1rem; 
+ font-size: 0.5rem;
+ background-color: #f5f2f0;
+ font-size: 0.6rem;
+ line-height: 0.8rem;
+ text-wrap: pretty;
+ margin: 0.5rem;
+ 
+
+
+.contenido-uno, .contenido-dos, .contenido-tres, .contenido-cuatro {
+   background-color: #e4e0de;
+ text-align: center;
+ padding: 1rem;
+ box-shadow: 0px 8px 6px -3px rgba(0, 0, 0, 0.15); 
+ border-radius: 0.5rem;
+ 
+
+.imagen-bio {
+    width: 100%;
+  height: auto;
+   border-radius: 0.5rem;
+}
+ }
+}
+
+.descripcion-bio {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+    font-family: "Special Elite", system-ui;
+}
+
+.texto-bio {
+  padding: 0.5rem;
+}
+
+.lista-bio {
+  list-style: none;
+}
+.boton-bio {
+    display: inline;
+    background-color: #fcee28;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    padding: 0.5rem;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 0.5rem;
+    
+    width: auto;
+   margin: 0 auto;
+ 
+
+   a {
+    text-align: center;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 800;
+
+   }
+}
+  
+
