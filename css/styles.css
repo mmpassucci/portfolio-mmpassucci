@@ -14,6 +14,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #d7bfbf;
+
 
   @media (min-width: 600px) {
     flex-direction: row;
@@ -90,7 +92,7 @@ body {
 }
 
 .contenedorhero {
-  width: 80%;
+  width: 100%;
   height: auto;
 
   h1 {
@@ -168,6 +170,7 @@ body {
     padding: 0.6rem;
     line-height: 0.5rem;
     text-wrap: pretty;
+    align-self: center;
   }
 
   a {
@@ -175,12 +178,13 @@ body {
     background-color: #fcee28;
     border-radius: 0.8rem;
     text-decoration: none;
-    padding: 0.3rem;
+    padding: 0.2rem 0.6rem 0.2rem 0.6rem;
     color: #000000;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     align-self: center;
     font-size: 0.5rem;
+  
   }
 
   @media (min-width: 487px) {
@@ -205,16 +209,26 @@ body {
     }
 
     p {
-      font-size: 0.8rem;
+      font-size: 0.6rem;
       line-height: 0.9rem;
       text-wrap: pretty;
       padding: 0rem 3rem 1.6rem 3rem;
     }
     a {
       font-size: 0.8rem;
-      width: 18%;
+      width: 25%;
     }
   }
+
+  @media (min-width: 768px) {
+      p {
+      font-size: 1rem;
+      width: 80%;
+      line-height: 1.2rem;}
+      a {
+      font-size: 1rem;
+      width: 20%;
+    }}
 }
 
 .card-desarrollos {
@@ -222,7 +236,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 70%;
   height: auto;
   max-width: 1200px;
   margin: 0 auto; /* Centra todo el bloque en pantallas de PC */
@@ -230,13 +244,16 @@ body {
   box-sizing: border-box; /* Evita que el padding rompa el ancho total */
   border-radius: 1rem;
 
+
+  
+
   a {
     text-align: center;
     height: auto;
   }
 
   img {
-    width: 100%;
+    width: 150px;
     min-width: 130px;
     height: auto;
     border-radius: 0.5rem;
@@ -248,9 +265,18 @@ body {
   }
 
   @media (min-width: 600px) {
+    height: 50vh;
+
     img {
-      width: 90%;
-      height: auto;
+      width: 300px;
+    }
+  }
+
+  @media (min-width: 768px) {
+     height: 70vh;
+
+      img {
+      width: 400px;
     }
   }
 }
@@ -405,113 +431,157 @@ body {
   margin-bottom: 1rem;
   align-items: center;
 
-
   .contenedor-img {
-       width: 50%;
-       min-width: 40%;
-    margin: 0.4rem;
-   
+    padding: 1rem 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     img {
-      width: 100%;
+      max-width: 80%; /*No deja que se ENCOJA mas del 80% del tamaño*/
+      min-width: 40%; /*No deja que se AGRANDE mas del 60% del tamaño*/
       height: auto;
-        box-shadow:
-    0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-     border-radius: 0.6rem;
+      box-shadow:
+        0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      border-radius: 50%;
+    }
+
+    @media (min-width: 1024px){
+      width: 50%;
     }
   }
-
   .texto-uno {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  text-align: left;
-   gap: 0.2rem;
-   padding: 0 0.5rem 0 0.3rem;
-     text-wrap: pretty;
+    text-align: left;
+
+    padding-inline: 0.6rem;
+    text-wrap: pretty;
   }
   h2 {
     font-family: "Special Elite", system-ui;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+    padding-bottom: 0.3rem;
   }
 
   h3 {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
+    padding-bottom: 0.3rem;
   }
   p {
-    font-size: 0.4rem;
-    text-wrap: pretty;  
+    font-size: 0.5rem;
+    text-wrap: pretty;
+  }
+  @media (min-width: 480px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: 0.9rem;
+    }
+
+    p {
+      font-size: 0.7rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
   }
 }
 
 /* seccion desarrollo-bio */
 .contenedor-dos {
   display: grid;
-  grid-template-columns: 1fr; 
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto);
- /* height: auto; */
-  grid-gap: 1rem; 
- font-size: 0.5rem;
- background-color: #f5f2f0;
- font-size: 0.6rem;
- line-height: 0.8rem;
- text-wrap: pretty;
- margin: 0.5rem;
- 
+  /* height: auto; */
+  grid-gap: 1rem;
+  font-size: 0.5rem;
+  background-color: #f5f2f0;
+  font-size: 0.6rem;
+  line-height: 0.8rem;
+  text-wrap: pretty;
+  margin: 0.5rem;
+     @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
 
 
-.contenido-uno, .contenido-dos, .contenido-tres, .contenido-cuatro {
-   background-color: #e4e0de;
- text-align: center;
- padding: 1rem;
- box-shadow: 0px 8px 6px -3px rgba(0, 0, 0, 0.15); 
- border-radius: 0.5rem;
- 
+  }}
 
-.imagen-bio {
-    width: 100%;
-  height: auto;
-   border-radius: 0.5rem;
-}
- }
-}
+
+  .contenido-uno,
+  .contenido-dos,
+  .contenido-tres,
+  .contenido-cuatro {
+    background-color: #e4e0de;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0px 8px 6px -3px rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem;
+
+    .imagen-bio {
+      width: 80%;
+      height: auto;
+      border-radius: 0.5rem;
+    }
+  }
+
 
 .descripcion-bio {
   font-size: 0.9rem;
-  padding: 0.5rem;
-    font-family: "Special Elite", system-ui;
+  padding: 1rem;
+  font-family: "Special Elite", system-ui;
 }
 
 .texto-bio {
-  padding: 0.5rem;
+  padding-inline: 1rem;
+  margin: 1rem;
+
+
 }
 
 .lista-bio {
   list-style: none;
 }
 .boton-bio {
-    display: inline;
-    background-color: #fcee28;
-    border-radius: 1.5rem;
-    text-decoration: none;
-    padding: 0.5rem;
-    color: #000000;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 0.5rem;
-    
-    width: auto;
-   margin: 0 auto;
- 
-
-   a {
-    text-align: center;
+  display: inline;
+  background-color: #fcee28;
+  border-radius: 1.5rem;
   text-decoration: none;
+  padding: 0.5rem;
   color: #000000;
-  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  width: auto;
+  margin: 1.5rem auto;
 
-   }
+  a {
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 800;
+  }
+
+  @media (min-width: 1024px) {
+     grid-column: 2/4;
+      font-size: 1rem;
+  }
+
+
 }
+   
   
-
