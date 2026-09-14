@@ -1,52 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página Contacto</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="shortcut icon" href="../assets/logos/MM.svg" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/logos/MM.svg"
+      type="image/x-icon"
+    />
+  </head>
 
-<body>
-   <header class="header">
-        <img src="../assets/logos/MM.svg" alt="logo MMPassucci" title="banner MMPassucci" width="100%">
-        <nav class="nav">
-            <ul class="lista">
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./bio.html">BIO</a></li>
-                <li><a href="./desarrollos.html">DESARROLLOS</a></li>
-                
-            </ul>
-        </nav>
+  <body>
+    <header class="header">
+      <img
+        src="../assets/logos/MM.svg"
+        alt="logo MMPassucci"
+        title="banner MMPassucci"
+        width="100%"
+      />
+      <nav class="nav">
+        <ul class="lista">
+          <li><a href="../index.html">INICIO</a></li>
+          <li><a href="./bio.html">BIO</a></li>
+          <li><a href="./desarrollos.html">DESARROLLOS</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section class="contform">
+      <section>
+       
+       <div class="contform">
+
+               <div class="tituloform">
              <h2>Contacto</h2>
-            <form action="">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre">
-                <br><br>
+             </div>
+        <form action="" class="formulario">
 
-                <label for="celular">Celular</label>
-                <input type="tel" id="celular" name="telefono">
-                <br><br>  
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" />
+          <br />
 
-                <label for="email">E-Mail</label>
-                <input type="email" id="email" name="email">
-                <br><br>
+          <label for="celular">Celular</label>
+          <input type="tel" id="celular" name="telefono" />
+          <br />
 
-                <label for="mensaje">Tu Mensaje</label>
-                <textarea name="comentarios" id="mensaje"></textarea>
-                <br><br>
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" name="email" />
+          <br />
 
-                <div>
-                   <input type="submit" value="Enviar">
-                   <input type="reset" value="Reiniciar">
-                </div>
+          <label for="mensaje">Tu Mensaje</label>
+          <textarea name="comentarios" id="mensaje"></textarea>
+          <br />
 
-            </form>
-        </section>
+          <div class="botonform">
+            <input type="submit" value="Enviar" />
+          </div>
 
+        </form>
+        </div>
+      </section>
+
+
+      <footer class="footer">
+        <p>
+          Diseñado, maquetado y realizado por MM Passucci. &copy; Todos los
+          derechos reservados.
+        </p>
+      </footer>
     </main>
+  </body>
+</html>

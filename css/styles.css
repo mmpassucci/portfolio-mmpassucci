@@ -16,7 +16,6 @@ body {
   align-items: center;
   border-bottom: 1px solid #d7bfbf;
 
-
   @media (min-width: 600px) {
     flex-direction: row;
     justify-content: space-between;
@@ -184,7 +183,6 @@ body {
     font-weight: 600;
     align-self: center;
     font-size: 0.5rem;
-  
   }
 
   @media (min-width: 487px) {
@@ -221,14 +219,16 @@ body {
   }
 
   @media (min-width: 768px) {
-      p {
+    p {
       font-size: 1rem;
       width: 80%;
-      line-height: 1.2rem;}
-      a {
+      line-height: 1.2rem;
+    }
+    a {
       font-size: 1rem;
       width: 20%;
-    }}
+    }
+  }
 }
 
 .card-desarrollos {
@@ -243,9 +243,6 @@ body {
   padding: 0 20px; /* "Colchón" de seguridad a los lados en celulares */
   box-sizing: border-box; /* Evita que el padding rompa el ancho total */
   border-radius: 1rem;
-
-
-  
 
   a {
     text-align: center;
@@ -273,9 +270,9 @@ body {
   }
 
   @media (min-width: 768px) {
-     height: 70vh;
+    height: 70vh;
 
-      img {
+    img {
       width: 400px;
     }
   }
@@ -448,7 +445,7 @@ body {
       border-radius: 50%;
     }
 
-    @media (min-width: 1024px){
+    @media (min-width: 1024px) {
       width: 50%;
     }
   }
@@ -514,31 +511,28 @@ body {
   line-height: 0.8rem;
   text-wrap: pretty;
   margin: 0.5rem;
-     @media (min-width: 1024px) {
+  @media (min-width: 1024px) {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-
-
-  }}
-
-
-  .contenido-uno,
-  .contenido-dos,
-  .contenido-tres,
-  .contenido-cuatro {
-    background-color: #e4e0de;
-    text-align: center;
-    padding: 1rem;
-    box-shadow: 0px 8px 6px -3px rgba(0, 0, 0, 0.15);
-    border-radius: 0.5rem;
-
-    .imagen-bio {
-      width: 80%;
-      height: auto;
-      border-radius: 0.5rem;
-    }
   }
+}
 
+.contenido-uno,
+.contenido-dos,
+.contenido-tres,
+.contenido-cuatro {
+  background-color: #e4e0de;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0px 8px 6px -3px rgba(0, 0, 0, 0.15);
+  border-radius: 0.5rem;
+
+  .imagen-bio {
+    width: 80%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+}
 
 .descripcion-bio {
   font-size: 0.9rem;
@@ -549,8 +543,6 @@ body {
 .texto-bio {
   padding-inline: 1rem;
   margin: 1rem;
-
-
 }
 
 .lista-bio {
@@ -577,11 +569,87 @@ body {
   }
 
   @media (min-width: 1024px) {
-     grid-column: 2/4;
-      font-size: 1rem;
+    grid-column: 2/4;
+    font-size: 1rem;
+  }
+}
+
+/* sección contacto */
+.contform {
+  background: linear-gradient(to bottom, #f5f2f0 20%, #dda1a1);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  border-radius: 1rem;
+  text-align: center;
+
+    @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content:space-evenly;    
+   }
+
+  h2 {
+    font-size: 2rem;
+    font-family: "Special Elite", system-ui;
+    padding-top: 2rem;
+
+     @media (min-width: 768px) {
+    font-size: 4rem;   
+      transform: rotate(-90deg);
+      white-space: wrap; /* para que no se corte en varias líneas */
+      /* writing-mode: vertical-lr;
+  text-orientation:mixed; controla cómo se orientan los caracteres */
+   }
   }
 
+  .formulario {
+    padding-top: 2rem;
+    width: 100%;
+    max-width: 600px;
+    padding-inline: 0.5rem;
+    padding-bottom: 2rem;
+  }
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #dda1a1;
+    height: 2rem;
+    font-size: 1rem;
+  }
 
+  label {
+    font-size: 0.8rem;
+  }
 }
-   
-  
+
+.botonform {
+  display: inline;
+  width: 100%;
+  max-width: 600px;
+  align-self: center;
+  /* padding-bottom: 3rem; */
+
+  input {
+    margin: 0 auto;
+    border: none;
+    background-color: #fcee28;
+    font-weight: 800;
+    font-size: 0.7rem;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    padding: 10px 25px;
+    width: auto;
+  }
+
+ 
+}
