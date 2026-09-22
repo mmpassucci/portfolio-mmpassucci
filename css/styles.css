@@ -431,12 +431,12 @@ body {
 
   .contenedor-img {
     padding: 1rem 1rem;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 30%; /* No deja que se AGRANDE mas del 60% del tamaño */
-    max-width: 30%;  /*No deja que se ENCOJA mas del 80% del tamaño  */
+    width: 100%;
+     max-width: clamp(150px, 30vw, 280px); /*nunca baja de 150px, nunca sube de 280px, y en el medio se ajusta según el ancho de la ventana (30vw).*/
+  
 
     img {
       width: 100%;
@@ -448,16 +448,12 @@ body {
     }
   }
 
-  @media (min-width: 1024px) {
-    /* img {min-width: 10%; No deja que se AGRANDE mas del 60% del tamaño */
 }
-  }
-
 
 .texto-uno {
   padding: 0.5rem;
   text-wrap: pretty;
-     width: 70%;
+  width: 70%;
 
   h2 {
     font-family: "Special Elite", system-ui;
@@ -473,7 +469,6 @@ body {
     padding-top: 0.4rem;
     font-size: 0.5rem;
     text-align: left;
- 
   }
 
   @media (min-width: 480px) {
@@ -491,7 +486,7 @@ body {
   }
 
   @media (min-width: 768px) {
-  h2 {
+    h2 {
       font-size: 2.5rem;
     }
 
@@ -538,9 +533,8 @@ body {
     font-size: 0.6rem;
   }
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     font-size: 0.8rem;
-    
   }
 }
 
@@ -562,7 +556,7 @@ body {
     font-size: 0.6rem;
   }
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     font-size: 0.7rem;
     line-height: 1rem;
   }
@@ -571,22 +565,19 @@ body {
 .lista-bio {
   list-style: none;
   padding-top: 1rem;
-  
 
   li {
     font-size: 0.5rem;
 
-        @media (min-width: 480px) {
-    font-size: 0.6rem;
-  }
+    @media (min-width: 480px) {
+      font-size: 0.6rem;
+    }
 
-  @media (min-width:768px) {
-    font-size: 0.7rem;
-    line-height: 1rem;
+    @media (min-width: 768px) {
+      font-size: 0.7rem;
+      line-height: 1rem;
+    }
   }
-  }
-
-
 }
 
 .boton-bio {
@@ -756,5 +747,138 @@ shrink en 1 (igual entre todas) → si falta espacio, se achican parejo. */
     font-size: 0.8rem;
     padding-top: 1rem;
     text-align: center;
+  }
+}
+
+/* página portafolio - sección proyectos */
+
+.proyectos {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  padding: 2rem 0.5rem 1rem 0.5rem;
+  width: 100%;
+}
+
+.texto-proyectos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  h2 {
+    font-size: 0.6rem;
+    font-family: "Special Elite", system-ui;
+  }
+
+  p {
+    font-size: 0.4rem;
+    padding: 0.6rem;
+    line-height: 0.5rem;
+    text-wrap: pretty;
+    align-self: center;
+  }
+
+  a {
+    display: inline-block;
+    background-color: #fcee28;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    align-self: center;
+    font-size: 0.5rem;
+    width: 100px;
+  }
+
+  @media (min-width: 487px) {
+    h2 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.5rem;
+    }
+
+    a {
+      font-size: 0.7rem;
+      width: 120px
+    }
+  }
+
+  @media (min-width: 600px) {
+    h2 {
+      font-size: 1.5rem;
+      padding: 1rem;
+    }
+
+    p {
+      font-size: 0.6rem;
+      line-height: 0.9rem;
+      text-wrap: pretty;
+      padding: 0rem 3rem 1.6rem 3rem;
+    }
+    a {
+      font-size: 0.8rem;
+      width: 120px
+    }
+  }
+
+  @media (min-width: 768px) {
+    p {
+      font-size: 0.8rem;
+      width: 80%;
+      line-height: 1.2rem;
+    }
+    a {
+      font-size: 1rem;
+      width: 120px;
+    }
+  }
+}
+
+
+.card-proyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: auto;
+  max-width: 1200px;
+  margin: 0 auto; /* Centra todo el bloque en pantallas de PC */
+  padding: 0 20px; /* "Colchón" de seguridad a los lados en celulares */
+  box-sizing: border-box; /* Evita que el padding rompa el ancho total */
+  border-radius: 1rem;
+
+
+  img {
+    width: 150px;
+    min-width: 130px;
+    height: auto;
+    border-radius: 0.5rem;
+    transition: transform 0.5s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  @media (min-width: 600px) {
+    height: 50vh;
+
+    img {
+      width: 300px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    height: 70vh;
+
+    img {
+      width: 400px;
+    }
   }
 }
