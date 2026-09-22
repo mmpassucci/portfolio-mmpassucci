@@ -756,8 +756,11 @@ shrink en 1 (igual entre todas) → si falta espacio, se achican parejo. */
   display: flex;
   flex-direction: row;
   height: auto;
-  padding: 2rem 0.5rem 1rem 0.5rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
   width: 100%;
+  background-color: rgba(58, 56, 56, 0.108);
+  margin-top: 1rem;
+  
 }
 
 .texto-proyectos {
@@ -799,7 +802,8 @@ shrink en 1 (igual entre todas) → si falta espacio, se achican parejo. */
     }
 
     p {
-      font-size: 0.5rem;
+      font-size: 0.47rem;
+       line-height: 0.7rem;
     }
 
     a {
@@ -849,7 +853,7 @@ shrink en 1 (igual entre todas) → si falta espacio, se achican parejo. */
   height: auto;
   max-width: 1200px;
   margin: 0 auto; /* Centra todo el bloque en pantallas de PC */
-  padding: 0 20px; /* "Colchón" de seguridad a los lados en celulares */
+  padding: 0 30px 0 10px; 
   box-sizing: border-box; /* Evita que el padding rompa el ancho total */
   border-radius: 1rem;
 
