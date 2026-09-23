@@ -148,10 +148,12 @@ body {
 
 .desarrollos {
   display: flex;
-  flex-direction: row;
-  height: 45vh;
-  padding: 10px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
   width: 100%;
+  height: 60vh;
 }
 
 .texto-desarrollos {
@@ -161,14 +163,14 @@ body {
   text-align: center;
 
   h2 {
-    font-size: 0.7rem;
+    font-size: 1.3rem;
     font-family: "Special Elite", system-ui;
   }
 
   p {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     padding: 0.6rem;
-    line-height: 0.5rem;
+    line-height: 0.67rem;
     text-wrap: pretty;
     align-self: center;
   }
@@ -184,100 +186,46 @@ body {
     font-weight: 600;
     align-self: center;
     font-size: 0.6rem;
-  }
+  }}
 
-  @media (min-width: 487px) {
-    h2 {
-      font-size: 1rem;
-    }
-
-    p {
-      font-size: 0.5rem;
-    }
-
-    a {
-      font-size: 0.7rem;
-      width: 20%;
-    }
-  }
-
-  @media (min-width: 600px) {
-    h2 {
-      font-size: 1.5rem;
-      padding: 1rem;
-    }
-
-    p {
-      font-size: 0.6rem;
-      line-height: 0.9rem;
-      text-wrap: pretty;
-      padding: 0rem 3rem 1.6rem 3rem;
-    }
-    a {
-      font-size: 0.8rem;
-      width: 25%;
-    }
-  }
-
-  @media (min-width: 768px) {
-    p {
-      font-size: 0.8rem;
-      width: 80%;
-      line-height: 1.2rem;
-    }
-    a {
-      font-size: 1rem;
-      width: 20%;
-    }
-  }
-}
-
-.card-desarrollos {
-  display: flex;
+  .card-desarrollos {
+    display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 70%;
+  justify-content:center;
   height: auto;
-  max-width: 1200px;
   margin: 0 auto; /* Centra todo el bloque en pantallas de PC */
   padding: 0 20px; /* "Colchón" de seguridad a los lados en celulares */
   box-sizing: border-box; /* Evita que el padding rompa el ancho total */
   border-radius: 1rem;
+overflow: hidden;
+
 
   a {
+    display: block;
+    width: 100%;
     text-align: center;
-    height: auto;
+    height: 100%;
+    
   }
 
   img {
-    width: 150px;
-    min-width: 130px;
+    width: 200px;
+    max-width: 100%;
     height: auto;
     border-radius: 0.5rem;
+    display: block;
     transition: transform 0.5s ease;
+   
+   
 
     &:hover {
       transform: scale(1.1);
     }
-  }
+  }}
 
-  @media (min-width: 600px) {
-    height: 50vh;
+ 
 
-    img {
-      width: 300px;
-    }
-  }
-
-  @media (min-width: 768px) {
-    height: 70vh;
-
-    img {
-      width: 400px;
-    }
-  }
-}
 
 /* seccion contacto en index */
 .contacto-index {
