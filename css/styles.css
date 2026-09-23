@@ -97,16 +97,16 @@ body {
   h1 {
     color: #ffffff;
     font-family: "Special Elite", system-ui;
-    padding: 10px;
-    font-size: 1rem;
+    padding-inline: 20px;
+    font-size: 1.5rem;
   }
   h2 {
     font-weight: 500;
     text-wrap: pretty;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     padding: 1rem;
     margin-bottom: 1rem;
-    line-height: 0.6rem;
+    line-height: 0.67rem;
     color: #ffffff;
     line-height: 0.7rem;
   }
@@ -149,7 +149,7 @@ body {
 .desarrollos {
   display: flex;
   flex-direction: row;
-  height: auto;
+  height: 45vh;
   padding: 10px;
   width: 100%;
 }
@@ -161,12 +161,12 @@ body {
   text-align: center;
 
   h2 {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     font-family: "Special Elite", system-ui;
   }
 
   p {
-    font-size: 0.4rem;
+    font-size: 0.5rem;
     padding: 0.6rem;
     line-height: 0.5rem;
     text-wrap: pretty;
@@ -183,7 +183,7 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     align-self: center;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
 
   @media (min-width: 487px) {
@@ -297,15 +297,15 @@ body {
 
   h2 {
     font-family: "Special Elite", system-ui;
-    font-size: 1rem;
+    font-size: 1,2rem;
     padding-top: 1.5rem;
   }
 
   p {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     text-align: center;
     padding: 1.5rem;
-    line-height: 0.6rem;
+    line-height: 0.67rem;
     text-wrap: pretty;
   }
 
@@ -320,7 +320,7 @@ body {
     font-weight: 600;
     width: 100px;
     text-align: center;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
 
   @media (min-width: 487px) {
@@ -362,7 +362,7 @@ body {
   background-color: #c4bfbb;
   border-radius: 1rem;
   text-align: center;
-  font-size: 0.4rem;
+  font-size: 0.5rem;
   box-shadow:
     0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
